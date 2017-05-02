@@ -1,0 +1,47 @@
+﻿
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand">TEAM7|Systems</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+
+                <!--li>
+                    <a href="../help/">Help</a>
+                </li-->
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <div ng-if="!currentUser.firstName" class="form-group">
+
+                    <a href="#"  class="btn btn-link">Login</a>
+
+                    <a [routerLink]="['/register']" class="btn btn-link">Register</a>
+                </div>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <alert></alert>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center">
+    <p>
+        Employee CMS Team-7
+    </p>
+</div>
+
+
+
+
+
